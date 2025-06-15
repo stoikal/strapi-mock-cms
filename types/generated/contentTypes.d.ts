@@ -391,7 +391,7 @@ export interface ApiArticleArticle extends Struct.CollectionTypeSchema {
           preset: 'defaultHtml';
         }
       >;
-    Cover: Schema.Attribute.Media<'images' | 'files', true>;
+    Cover: Schema.Attribute.Media<'images' | 'files'>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
